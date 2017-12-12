@@ -11,7 +11,7 @@ try:
 		conn,add=s.accept()
 		while True:
 			data2=''
-			data1=conn.recv(3)
+			data1=conn.recv(100)
 			if data1=='EOF':
 				conn.send('hello client1')
 				break
