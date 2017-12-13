@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 import socket
-host ='YOUR_ADDRESS'
+host ='0.0.0.0' #Server default IP is 0.0.0.0
 port =7500
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 s.bind((host,port))
