@@ -4,6 +4,7 @@ import socket
 import sys
 import os
 host ='127.0.0.2'
+host ='0.0.0.0' #Server default IP is 0.0.0.0
 port =7500
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 s.bind((host,port))
@@ -28,4 +29,5 @@ try:
 except KeyboardInterrupt:
 	print "you have CTRL+C,Now quit"
 	os.close(result)
+	s.close()
 	s.close()
