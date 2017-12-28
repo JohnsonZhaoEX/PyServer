@@ -4,7 +4,7 @@ import os
 import sys
 ss=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 ss.connect(('127.0.0.2',7500))
-re = os.open("Content.txt", os.O_RDONLY)
+re = os.open("Content.sh", os.O_RDONLY)
 
 '''string = raw_input()
 print string
